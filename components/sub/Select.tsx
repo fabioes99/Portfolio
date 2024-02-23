@@ -2,7 +2,7 @@ import { Select, SelectContent, SelectGroup, SelectTrigger, SelectLabel, SelectI
 
 export default function CustomSelect() {
   
-  function handleLink(url) {
+  function handleLink(url: string) {
     window.location.href = `#${url}`;
   }
   
