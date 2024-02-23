@@ -27,7 +27,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row  items-center justify-center px-20 mt-40 w-full z-50"
+      className="flex flex-row  items-center justify-center px-12 mt-40 w-full z-50"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -80,7 +80,7 @@ const HeroContent = () => {
         <motion.div>
           
         </motion.div>
-        <motion.div className="flex justify-around ">
+        <motion.div className="flex justify-evenly ">
           <motion.a
             href="#contact"
             variants={slideInFromLeft(1)}
