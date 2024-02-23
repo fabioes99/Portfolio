@@ -25,11 +25,10 @@ const Projects = () => {
   useEffect(() => {
     axiosInstance.get('/Git_Repos')
       .then((response: any) => {
-        const filtered = response.data.results;
+        const filtered = response.data.results;      
         setFilteredProjects(filtered);
       })
   }, []); 
-
 
 
   return (
@@ -61,6 +60,7 @@ const Projects = () => {
       <div className=" h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 ">
           {filteredProjects.map((project: any, index: any) => (
+            
             <motion.li
               key={index}
               variants={cardVariants}
@@ -73,7 +73,7 @@ const Projects = () => {
                 title={project.title}
                 description={project.description}
                 imgUrls={project.image}
-                gitUrl={project.gitUrl}
+                gitUrl={project.git_url}
                 previewUrl={project.previewUrl}
               />
             </motion.li>
