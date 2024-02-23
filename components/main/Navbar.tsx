@@ -29,7 +29,7 @@ const Navbar = () => {
        
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="md:hidden">
+          <div className="md:hidden mr-3">
             <CustomSelect />
           </div>
           
