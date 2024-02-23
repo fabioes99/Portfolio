@@ -81,6 +81,12 @@
   cursor: pointer !important;
 }
 
+.padding-mobile{
+  @media (max-width: 640px) { 
+    padding: 0 15px; 
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

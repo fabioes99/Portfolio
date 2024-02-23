@@ -57,7 +57,7 @@ const Projects = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <div className=" h-full w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className=" h-full w-full flex flex-col md:flex-row gap-10 px-10 padding-mobile">
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 ">
           {filteredProjects.map((project: any, index: any) => (
             

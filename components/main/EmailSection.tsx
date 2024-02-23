@@ -43,7 +43,7 @@ const EmailSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="z-50 grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative px-16"
+      className="z-50 grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative px-16 padding-mobile"
     >
       <div className="z-10">
         <p className="text-[42px] font-bold my-2 text-transparent  bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text">
