@@ -23,7 +23,11 @@ const Projects = () => {
   };
 
   useEffect(() => {
-   
+    axiosInstance.get('/Git_Repos')
+      .then((response: any) => {
+        const filtered = response.data.results;
+        setFilteredProjects(filtered);
+      })
   }, []); 
 
 

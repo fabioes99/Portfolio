@@ -12,6 +12,17 @@ import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 
 const HeroContent = () => {
+
+  const handleDownload = () => {
+    const pdfUrl = '/cv/Profile.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Profile.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -77,12 +88,13 @@ const HeroContent = () => {
           >
             Hire me!
           </motion.a>
-          <motion.a
+          <motion.button
+            onClick={handleDownload}
             variants={slideInFromLeft(1)}
             className="py-2 w-32 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
           >
             Download CV
-          </motion.a>
+          </motion.button>
         </motion.div>
       </div>
 
